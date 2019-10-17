@@ -7,7 +7,7 @@ public class Test {
 		//完成猜数字游戏
 		Scanner scan = new Scanner(System.in);
 		Random rand = new Random();
-		int randNum = rand.nextInt(100)+1;//0-99 +1 ->1-100		
+		int randNum = rand.nextInt(100)+1;//0-99 +1 ->1-100
 		while(true) {
 			System.out.println("请输入要猜的数字：");
 			int num = scan.nextInt();
@@ -29,12 +29,12 @@ public class Test {
 		//获取一个数二进制序列中所有的偶数位和奇数位， 分别输出二进制序列
 		int num = 10;
 		int i = 0;
-		for(i=31;i>=0;i-=2){
-			System.out.print(((num>>i)&1)+" ");//奇位
+		for(i=31;i>=1;i-=2){
+			System.out.print(((num>>i)&1)+" ");//偶位  移完后num不变
 		}
 		System.out.println();
 		for(i=30;i>=0;i-=2){
-			System.out.print(((num>>i)&1)+" ");//偶位
+			System.out.print(((num>>i)&1)+" ");//奇位
 		}
 		*/
 		
@@ -55,7 +55,7 @@ public class Test {
 		
 		do {
 			System.out.println("请输入密码：");
-			String scr = scan.nextLine();
+			String scr = scan.nextLine();//  A.equals(B),其中A不能为空
 			if(str.equals(scr)){     //equals相当于C中的strcmp,比较
 				System.out.println("输入正确，登陆成功");
 				break;
@@ -71,25 +71,26 @@ public class Test {
 		
 		
 		//求出0～999之间的所有“水仙花数”并输出。(“水仙花数”是指一个三位数，
-		//其各位数字的立方和确好等于该数本 身，如；153＝1＋5＋3?，则153是
+		//其各位数字的立方和确好等于该数本身，如；153＝1＋5＋3?，则153是
 		//一个“水仙花数”。) 
 		int sum = 0;
 		int i = 0;
 		for(i=100; i<=999;i++){
-			if(i==pow(i%10,3)+pow(i%100/10,3)+pow(i/100,3)){
+			if(i==Math.pow(i%10,3)+Math.pow(i%100/10,3)+Math.pow(i/100,3)){
 				System.out.println(i);
 			}
 		}
 		
 		
 		//编写程序数一下 1到 100 的所有整数中出现多少个数字9
+		//20个
 		int i = 0;
 		int count = 0;
 		for(i=1; i<=100; i++){
 			if(i%10==9){
 				count++;
 			}
-			if(i/10==9&&i%10!=9){
+			if(i/10==9){
 				count++;
 			}
 		}
@@ -108,6 +109,7 @@ public class Test {
 		
 		
 		//求两个正整数的最大公约数
+		//
 		int n1=34;
 		int n2=40;
 		int c = n1;
@@ -118,6 +120,18 @@ public class Test {
 			c--;
 		}
 		System.out.println(c);
+		//优化 辗转相除法
+		/*
+		public static int fun1(int a,int b){
+			int c=0;
+			while(a%b!=0){
+				c=a%b;
+				a=b;
+				b=c;
+			}
+			return tmp;
+		}
+		*/
 		
 		
 		//输出乘法口诀表 
@@ -160,6 +174,16 @@ public class Test {
 		}else {
 			System.out.println("不是素数");
 		}
+		/*
+		public static boolean isPrime(int n){
+			for(int i=2;i<=Math.sqrt(n);i++){
+				if(n%i==0){
+					return false;
+				}
+				return true;
+			}
+		}
+		*/
 			
 		
 		//根据年龄, 来打印出当前年龄的人是少年(低于18),
@@ -224,6 +248,15 @@ public class Test {
 			num = num>>1;
 		}
 		return count;
+		//另一种方法
+		/*
+		int count = 0;
+		while(num!=0){
+			count++;
+			num = num&(num-1);
+		}
+		return count;
+		*/
 	}
 	public static void Print (int num){
 		if(num>9) {
