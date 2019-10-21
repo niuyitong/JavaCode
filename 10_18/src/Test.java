@@ -8,6 +8,7 @@ import java.util.Arrays;
  * 两者区别：①返回值  ②调用System Array不同   ③速度问题：System.arraycopy()更快
  * 4.array.clone即数组名.clone       数组名为你要拷贝的数组名
  */
+ 
 //以上四种方式：
 // 对于数组中是简单类型就是深拷贝   数组中是引用类型就是浅拷贝
 // 浅拷贝：把1拷贝到2中，改变2则1也改变   即修改源数组不会影响到新数组
