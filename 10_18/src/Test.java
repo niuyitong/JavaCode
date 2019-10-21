@@ -83,6 +83,7 @@ public class Test {
             }
         }
     }
+	//二分查找递归法
     public static int binarySearch(
             int[]array,int key,int left,int right){
         if(left>right){
@@ -97,6 +98,21 @@ public class Test {
             return binarySearch(array,key,mid+1,right);
         }
     }
+	//二分查找非递归法
+	public static int binarySearch2(int[]array,int key,int left,int right){
+		while(left<right){
+			int mid = (left+right)/2;
+			if(array[mid]==key){
+				return mid;
+			}
+			if(array[mid]<key){
+				left = mid+1;
+			}else {
+				right = mid-1;
+			}
+		}
+		return -1;
+	}
     public static void bubbleSort(int[] array){
         int i = 0;
         int j = 0;
