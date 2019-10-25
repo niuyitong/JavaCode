@@ -67,44 +67,110 @@ public class Test {
             }
             return tmp;
          }
-        public static int majorityElement(int[] nums2) {
+        public static int majorityElement(int[] nums) {
 
-            int count = 1;
-            int maj = nums2[0];
-            for (int i = 1; i < nums2.length; i++) {
-                if (maj == nums2[i])
-                    count++;
-                else {
-                    count--;
-                    if (count == 0) {
-                        maj = nums2[i + 1];
-                    }
+            int count = 0;
+            int ret = 0;
+            for (int num : nums) {
+                if (count == 0) {
+                    ret = num;
                 }
+                count += (num == ret) ? 1 : -1;
             }
-            return maj;
+            return ret;
           }
+    public static int fib(int N) {
+        if(N==1 || N==2){
+            return 1;
+        }
+        int i = 1;
+        int j = 1;
+        int ret = 0;
+        for(int n = 3;n<=N;n++){
+            ret = i+j;
+            i = j;
+            j = ret;
+        }
+        return ret;
+    }
+    public static int mySqrt(int x) {
+        int left = 0;
+        int right = x / 2 + 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2 + 1;
+            if (mid > x / mid) {
+                right = mid - 1;
+            } else {
+                left = mid;
+            }
+        }
+        return left;
+    }
+//标准解法
+    public static double  myPow2(double x, int n) {
+        double res = 1.0;
+        for (int i = n; i != 0; i /= 2) {
+            if (i % 2 != 0) res *= x;
+            x *= x;
+        }
+        return n < 0 ? 1 / res : res;
+    }
+
+    public static double myPow(double x, int n) {
+            double ret = 1.0;
+            if(n>0){
+                for(int i = 0;i<n;i++){
+                    ret *=x;
+                }
+            }else if(n<0){
+                int tmp = -n;
+                for(int i=0;i<tmp;i++){
+                    ret *= x;
+                }
+                ret = 1.0/ret;
+            }else
+                ret = 1;
+            return ret;
+    }
         public static void main(String[] args){
+
+            //实现 pow(x, n) ，即计算 x 的 n 次幂函数。
+            double x = 2;
+            int n = -3;
+            double ret = myPow(x,n);
+            System.out.println(ret);
+            /*
+            //计算并返回 x 的平方根，其中 x 是非负整数。
+            int num = 8;
+            int ret = mySqrt(num);
+            System.out.println(ret);
+
+            //斐波那契
+            int N = 5;
+            int ret = fib(N);
+            System.out.println(ret);
             //求众数（从第一个数开始count=1，遇到相同的就加1，
             // 遇到不同的就减1，减到0就重新换个数开始计数，总能找到最多的那个
-            int[] arr2 = {2,2,1,1,2,4,2,4,4,4,4,4,4,4};
+            int[] arr2 = {2,2,1,1,2,4,4};
             int ret3 = majorityElement(arr2);
             System.out.println(ret3);
+
             //只出现一次的数字
             int[] arr = {1,2,3,3,1,5,2};
             int ret2 = singleNumber(arr);
             System.out.println(ret2);
+
             //爬楼梯
             int n = 10;
             int ret = climbStairs(n);
-            /*
+
             //给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。
             //最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。
             //输入: [1,2,3]   输出: [1,2,4]
             //解释: 输入数组表示数字 123。129 130
             int[] arr = {9};
             System.out.println(Arrays.toString(plusOne(arr)));
-            */
-            /*
+
             //判断一个数是否是回文数
             int x = 121;
             boolean ret = isPalindrome(x);
