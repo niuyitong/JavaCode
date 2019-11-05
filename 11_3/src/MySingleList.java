@@ -176,4 +176,80 @@ class MySingleList {
     }
 
 
+
+    //反转单链表
+    public ListNode reverseList(){
+        ListNode prev = null;
+        ListNode cur = this.head;
+        ListNode newHead = null;
+        while(cur!=null){
+            ListNode curNext = cur.next;
+            if(curNext == null){
+                newHead = cur;
+            }
+            cur.next = prev;
+            prev = cur;
+            cur = curNext;
+        }
+        return newHead;
+    }
+
+    public void display2(ListNode head){
+        if(head == null) {
+            return;
+        }
+        ListNode cur = head;
+        while (cur != null) {
+            System.out.print(cur.data+" ");
+            cur = cur.next;
+        }
+        System.out.println();
+    }
+
+    //链表的中间节点
+    public ListNode middleNode1(){//遍历两遍
+        int len = getLength()/2;
+        ListNode cur = this.head;
+        while(len!=0){
+            cur = cur.next;
+            len--;
+        }
+        return cur;
+    }
+
+    public ListNode middleNode2() {//遍历一遍
+        ListNode fast = this.head;
+        ListNode slow = this.head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
+    }
+    //倒数第K个节点
+    public ListNode findKthToTail(int k){
+        if(k<=0 || head == null){
+            return null;
+        }
+        ListNode fast = this.head;
+        ListNode slow = this.head;
+        while(k-1!=0){
+            if(fast.next != null){
+                fast = fast.next;
+                k--;
+            } else{
+                System.out.println("没有这个节点");
+                return null;
+            }
+        }
+        while(fast.next != null){
+            fast = fast.next;
+            slow = slow.next;
+        }
+        return slow;
+    }
+
+
+
+
 }

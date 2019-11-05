@@ -23,8 +23,19 @@ public class TestDemo {
         System.out.println("删除199");
         mySingleList.display();
 
-        mySingleList.clear();
-        System.out.println("fakfalls");
+        //逆置
+       // ListNode newHead = mySingleList.reverseList();
+       // mySingleList.display2(newHead);
+
+        //中间节点
+        ListNode center = mySingleList.middleNode2();
+        System.out.println(center.data);
+
+        //
+        ListNode k = mySingleList.findKthToTail(4);
+        System.out.println(k.data);
+        //mySingleList.clear();
+        //System.out.println("fakfalls");
 
        /* boolean flg = mySingleList.contains(99);
         System.out.println(flg);
