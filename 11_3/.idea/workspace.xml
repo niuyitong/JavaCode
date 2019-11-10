@@ -12,20 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MySingleList.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MySingleList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MySingleList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="153" column="25" selection-end-line="255" />
+            <state relative-caret-position="13895">
+              <caret line="399" column="9" lean-forward="true" selection-start-line="399" selection-start-column="9" selection-end-line="399" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestDemo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="27" column="9" selection-end-line="45" />
+            <state relative-caret-position="-713">
+              <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -154,11 +154,16 @@
       <workItem from="1572869875452" duration="5149000" />
       <workItem from="1572949128497" duration="10547000" />
       <workItem from="1572967356232" duration="136000" />
+      <workItem from="1573268269913" duration="2413000" />
+      <workItem from="1573346818851" duration="11969000" />
+      <workItem from="1573367611878" duration="1913000" />
+      <workItem from="1573370160418" duration="250000" />
+      <workItem from="1573370535929" duration="7874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37724000" />
+    <option name="totallyTimeSpent" value="62143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -166,6 +171,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -191,7 +197,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +206,76 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/MySingleList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11585">
+          <caret line="331" column="9" lean-forward="true" selection-start-line="331" selection-start-column="9" selection-end-line="331" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1645">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MySingleList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11935">
+          <caret line="341" column="26" lean-forward="true" selection-start-line="341" selection-start-column="26" selection-end-line="341" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MySingleList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11200">
+          <caret line="320" column="28" lean-forward="true" selection-start-line="320" selection-start-column="28" selection-end-line="320" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1295">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MySingleList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8610">
+          <caret line="246" column="29" lean-forward="true" selection-start-line="246" selection-start-column="29" selection-end-line="246" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1085">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MySingleList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5355">
+          <caret line="153" column="25" selection-end-line="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="27" column="9" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MySingleList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5285">
@@ -243,17 +318,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MySingleList.java">
+    <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="153" column="25" selection-end-line="255" />
+        <state relative-caret-position="-713">
+          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/MySingleList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="27" column="9" selection-end-line="45" />
+        <state relative-caret-position="13895">
+          <caret line="399" column="9" lean-forward="true" selection-start-line="399" selection-start-column="9" selection-end-line="399" selection-end-column="9" />
         </state>
       </provider>
     </entry>
