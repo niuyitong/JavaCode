@@ -257,10 +257,10 @@ class MySingleList {
     //以x为基准分割链表,小于X的在左边，大于的在右边
     //1 3 8 4 9  ==>  若x为5  1 3 4 8 9
     public ListNode partition(int x) {
-        ListNode bs = null;
-        ListNode be = null;
-        ListNode as = null;
-        ListNode ae = null;
+        ListNode bs = null;     //before start
+        ListNode be = null;     //before end
+        ListNode as = null;     //after start
+        ListNode ae = null;     //after end
         ListNode cur = this.head;
         while (cur != null) {//遍历数组
             if (cur.data < x) {
@@ -311,7 +311,7 @@ class MySingleList {
                         && cur.data == cur.next.data){
                     cur = cur.next;
                 }
-                cur = cur.next;
+                cur = cur.next;     //删除了重复的节点
             }else {
                 tmp.next = cur;
                 tmp = tmp.next;
@@ -323,7 +323,7 @@ class MySingleList {
     }
 
 
-    //判断是否是回文链表
+    //判断是否是回文链表 1 -> 2 -> 3 -> 2 -> 1
     public boolean chkPalindrome() {
         //1、找到单链表的中间节点
         ListNode fast = this.head;
@@ -332,7 +332,7 @@ class MySingleList {
             fast = fast.next.next;
             slow = slow.next;
         }
-        //2、反转单链表
+        //2、反转单链表 1 -> 2 -> 3 <- 2 <- 1// 将后半部分反转
         ListNode cur = slow.next;
         while (cur != null) {
             ListNode curNext = cur.next;
