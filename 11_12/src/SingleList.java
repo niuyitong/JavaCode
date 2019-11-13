@@ -153,11 +153,11 @@ class SingleList {
         }
         return bs;
     }
-
+    /*
     //给定一个单链表，把所有的奇数节点和偶数节点分别排在一起。
     //输入: 2->1->3->5->6->4->7->NULL
     //输出: 2->3->6->7->1->5->4->NULL
-    public ListNode oddEvenList() {
+    public ListNode oddEvenList1() {
         ListNode os = null;     //odd start
         ListNode oe = null;       //  end
         ListNode es = null;     //even start
@@ -195,8 +195,55 @@ class SingleList {
         return os;
 
     }
+*/
+    //更优解 将后面的奇节点一个一个往前挪
+    public ListNode oddEvenList2() {
+        if(this.head == null || this.head.next == null){
+            return this.head;
+        }
+        ListNode pre = this.head;
+        ListNode cur = this.head.next;
+        ListNode even = this.head.next; //记住偶节点的开头
+        while(cur != null && cur.next != null){
+            ListNode curNext = cur.next;
+            pre.next = cur.next;
+            pre = pre.next;
+            if(curNext.next == null){
+                cur.next = null;
+                break;
+            }
+            cur.next = curNext.next;
+            cur = curNext.next;
+        }
+        pre.next = even;
+        return this.head;
+    }
 
+//编写一个程序，找到两个单链表相交的起始节点。
+    //输入：intersectVal = 8, listA = [4,1,8,4,5],
+   // listB = [5,0,1,8,4,5], skipA = 2, skipB = 3
+   // 输出：Reference of the node with value = 8
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+     if (headA == null || headB == null) return null;
+    int lenA = getLength(headA), lenB = getLength(headB);
+        if (lenA > lenB) {
+        for (int i = 0; i < lenA - lenB; ++i) headA = headA.next;
+    } else {
+        for (int i = 0; i < lenB - lenA; ++i) headB = headB.next;
+    }
+        while (headA != null && headB != null && headA != headB) {
+        headA = headA.next;
+        headB = headB.next;
+    }
+        return (headA != null && headB != null) ? headA : null;
+}
+    public int getLength(ListNode head) {
+        int cnt = 0;
+        while (head != null) {
+            ++cnt;
+            head = head.next;
+        }
+        return cnt;
 
-
-
+    }
 }

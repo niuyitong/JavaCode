@@ -9,7 +9,7 @@ public class Test {
         mySingleList.addLast(3);
         mySingleList.display();//2 5 9 1 7 3
 
-        mySingleList.oddEvenList();
+        mySingleList.oddEvenList2();
         mySingleList.display();
     }
 }
