@@ -219,31 +219,5 @@ class SingleList {
         return this.head;
     }
 
-//编写一个程序，找到两个单链表相交的起始节点。
-    //输入：intersectVal = 8, listA = [4,1,8,4,5],
-   // listB = [5,0,1,8,4,5], skipA = 2, skipB = 3
-   // 输出：Reference of the node with value = 8
-    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-     if (headA == null || headB == null) return null;
-    int lenA = getLength(headA), lenB = getLength(headB);
-        if (lenA > lenB) {
-        for (int i = 0; i < lenA - lenB; ++i) headA = headA.next;
-    } else {
-        for (int i = 0; i < lenB - lenA; ++i) headB = headB.next;
-    }
-        while (headA != null && headB != null && headA != headB) {
-        headA = headA.next;
-        headB = headB.next;
-    }
-        return (headA != null && headB != null) ? headA : null;
-}
-    public int getLength(ListNode head) {
-        int cnt = 0;
-        while (head != null) {
-            ++cnt;
-            head = head.next;
-        }
-        return cnt;
 
-    }
 }
