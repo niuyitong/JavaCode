@@ -1,0 +1,19 @@
+package com.user;
+
+import com.book.BookList;
+import com.operation.IOperation;
+
+public abstract class User {
+    public String name;
+    //IOperation-->实现了这个接口的类都可以存放进去
+    public IOperation[] operations;
+
+    public abstract int menu();
+
+    // 根据用户选项执行操作
+    public void doOperation(int choice, BookList bookList) {
+        operations[choice].work(bookList);
+        //对象  .
+    }
+
+}
