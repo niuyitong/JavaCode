@@ -20,6 +20,7 @@ public class AddOperation implements IOperation{
         int pos = bookList.getUsedSize();
         bookList.setBooks(pos,book);
         bookList.setUsedSize(pos+1);
+        System.out.println("添加成功！");
 
     }
 }
