@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff8e29de-1172-4404-9cca-46f94c28d172" name="Default" comment="" />
+    <list default="true" id="dfeae4b0-aae3-43f9-a61f-481821a42c4d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,12 +15,8 @@
       <file leaf-file-name="TestDemo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-140">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#86#87#0" expanded="true" />
-                <element signature="e#116#117#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="455">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -61,16 +57,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="2020_03_24" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2020_03_24" type="462c0819:PsiDirectoryNode" />
+              <item name="2020_03_20" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2020_03_20" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="2020_03_24" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2020_03_24" type="462c0819:PsiDirectoryNode" />
+              <item name="2020_03_20" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2020_03_20" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -79,7 +76,6 @@
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,17 +145,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ff8e29de-1172-4404-9cca-46f94c28d172" name="Default" comment="" />
-      <created>1585014145382</created>
+      <changelist id="dfeae4b0-aae3-43f9-a61f-481821a42c4d" name="Default" comment="" />
+      <created>1584664061589</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1585014145382</updated>
-      <workItem from="1585014156976" duration="786000" />
+      <updated>1584664061589</updated>
+      <workItem from="1584664077845" duration="6017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="786000" />
+    <option name="totallyTimeSpent" value="6017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -203,12 +199,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/TestDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#86#87#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="455">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
         </state>
       </provider>
     </entry>
