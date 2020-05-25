@@ -2,6 +2,79 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Test {
+    //实现strStr
+    public static int strStr(String haystack, String needle) {
+        if(haystack.length()==0 ){
+            if(needle.length()==0){
+                return 0;
+            }else{
+                return -1;
+            }
+        }
+        if(needle.length()==0){
+            return 0;
+        }
+        int start = 0;
+        int j=0;
+        for(int i=0; i<haystack.length(); i++){
+            if(haystack.charAt(i)==needle.charAt(j)){
+                start = i;
+                while(i<haystack.length() && j<needle.length()
+                        && haystack.charAt(i)==needle.charAt(j)){
+                    i++;
+                    j++;
+                }
+                if(j==needle.length()){
+                    return start;
+                }
+                i = start;
+                j = 0;
+            }
+        }
+        return -1;
+    }
+    //反转字符串II
+    public void reverse(char[] arr, int i, int j){
+        while(i<j){
+            arr[i]^=arr[j];
+            arr[j]^=arr[i];
+            arr[i]^=arr[j];
+            i++;
+            j--;
+        }
+    }
+    public String reverseStr(String s, int k) {
+        char[] arr = s.toCharArray();
+        int len = s.length();
+        for(int i=0; i<len; i += 2*k){
+            if(i+2*k<len || i+k<len){
+                reverse(arr,i,i+k-1);
+            }else{
+                reverse(arr,i,len-1);
+                break;
+            }
+        }
+        return new String(arr);
+    }
+    //回文排列
+    public boolean canPermutePalindrome(String s) {
+        int[] chas = new int[256];
+        for(int i=0; i<s.length(); i++){
+            int index = (int)(s.charAt(i));
+            chas[index] += 1;
+        }
+        int count1 = 0;
+        for(int i=0; i<chas.length; i++){
+            if(chas[i]%2==1){
+                count1++;
+            }
+        }
+        if(count1==1 || count1==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
     //最长公共前缀
     public String longestCommonPrefix(String[] strs) {
         if(strs.length==0){
@@ -63,6 +136,9 @@ public class Test {
     public static void main(String[] args) {
         Map<String,Integer> map = new HashMap<>();
         StringBuilder sb = new StringBuilder("RBGL");
-
+        String a = "asjidisnci";
+        String b = "dis";
+        int ret = strStr(a,b);
+        System.out.println(ret);
     }
 }
