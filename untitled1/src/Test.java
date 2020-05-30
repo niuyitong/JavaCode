@@ -2,6 +2,88 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Test {
+    public static int reverse(int x) {
+        int sum = 0;
+        while(x!=0){
+            int tmp = x%10;
+            if(sum>Integer.MAX_VALUE/10 || (sum==Integer.MAX_VALUE/10 && tmp>7)) return 0;
+            if(sum<Integer.MIN_VALUE/10 || (sum==Integer.MIN_VALUE/10 && tmp<-8)) return 0;
+            sum = sum * 10+tmp;
+            x /= 10;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(reverse(-2147483648));
+    }
+    //最长回文子串
+    private int broad(String s,int L, int R){
+        int len = s.length();
+        while(L>=0 && R<len && s.charAt(L)==s.charAt(R)){
+            L--;
+            R++;
+        }
+        return R-L-1;
+    }
+    public String longestPalindrome(String s) {
+        if(s==null || s.length()==0){
+            return "";
+        }
+        int start = 0;
+        int end = 0;
+        for(int i=0; i<s.length(); i++){
+            int oddLen = broad(s,i,i);
+            int evenLen = broad(s,i,i+1);
+            int len = Math.max(oddLen,evenLen);
+            if(len>end-start+1){
+                start = i-(len-1)/2;
+                end = i+len/2;
+            }
+        }
+        return s.substring(start,end+1);
+    }
+
+   //字符串相加
+    public String addStrings(String num1, String num2) {
+        char[] arr1 = num1.toCharArray();
+        char[] arr2 = num2.toCharArray();
+        int i = arr1.length-1;
+        int j = arr2.length-1;
+        int flg = 0;
+        StringBuilder sb = new StringBuilder();
+        while(i>=0 || j>=0 || flg!=0){
+            if(i>=0) flg += arr1[i]-'0';
+            if(j>=0) flg += arr2[j]-'0';
+            sb.append(flg%10);
+            flg /= 10;
+            i--;
+            j--;
+        }
+        return sb.reverse().toString();
+    }
+    //反转字符串中的单词
+    public String reverse(String s){
+        char[] arr = s.toCharArray();
+        int l = 0;
+        int r = s.length()-1;
+        while(l<r){
+            arr[l] ^= arr[r];
+            arr[r] ^= arr[l];
+            arr[l] ^= arr[r];
+            l++;
+            r--;
+        }
+        return new String(arr);
+    }
+    public String reverseWords(String s) {
+        String[] strs = s.split(" ");
+        StringBuffer sb = new StringBuffer();
+        for(int i=0; i<strs.length; i++){
+            sb.append(reverse(strs[i])+" ");
+        }
+        return sb.toString().trim();
+    }
     //实现strStr
     public static int strStr(String haystack, String needle) {
         if(haystack.length()==0 ){
@@ -133,7 +215,7 @@ public class Test {
         }
         return true;
     }
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         Map<String,Integer> map = new HashMap<>();
         StringBuilder sb = new StringBuilder("RBGL");
         String a = "asjidisnci";
