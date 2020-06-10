@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87df30ec-2450-459b-9d6a-2cd3b4fd0751" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cMFfTetMrhOx8e80yrD0nDcYsH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src0604" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pycharm工程\2020_05_24\src0604" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in Testddt.py">
+    <configuration name="Unittests for Testddt.baidu.test_baidu3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="2020_05_24" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src0604" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Testddt.baidu.test_baidu3&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for Testddt.baidu.test_baidu4" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="2020_05_24" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src0604" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Testddt.baidu.test_baidu4&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for baidu2.Baidu1.test_hao" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="2020_05_24" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src0604" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;baidu2.Baidu1.test_hao&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for src0604.Testddt.Testddt.test_hao" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="2020_05_24" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src0604" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;src0604.Testddt.Testddt.test_hao&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in Testddt.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="2020_05_24" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src0604" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src0604/Testddt.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in Testddt.py" />
+        <item itemvalue="Python tests.Unittests for Testddt.baidu.test_baidu4" />
+        <item itemvalue="Python tests.Unittests for Testddt.baidu.test_baidu3" />
+        <item itemvalue="Python tests.Unittests for src0604.Testddt.Testddt.test_hao" />
+        <item itemvalue="Python tests.Unittests for baidu2.Baidu1.test_hao" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87df30ec-2450-459b-9d6a-2cd3b4fd0751" name="Default Changelist" comment="" />
+      <created>1590330659454</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590330659454</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="434" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590502226404">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="434" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590502226404" />
+    <state width="1345" height="148" key="GridCell.Tab.0.bottom" timestamp="1591755367594">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="148" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591755367594" />
+    <state width="1345" height="148" key="GridCell.Tab.0.center" timestamp="1591755367594">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="148" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591755367594" />
+    <state width="1345" height="148" key="GridCell.Tab.0.left" timestamp="1591755367594">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="148" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591755367594" />
+    <state width="1345" height="148" key="GridCell.Tab.0.right" timestamp="1591755367594">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="148" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591755367594" />
+    <state x="169" y="12" key="SettingsEditor" timestamp="1590502123197">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="169" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590502123197" />
+    <state x="368" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1590501742416">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="368" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590501742416" />
+  </component>
+</project>
