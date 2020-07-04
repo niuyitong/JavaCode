@@ -1,0 +1,40 @@
+//自连接
+select e1.name Employee from Employee e1,Employee e2
+where e1.ManagerId=e2.id AND e1.Salary>e2.Salary;
+//删除重复的电子邮箱
+delete p1 from Person p1,Person p2
+where p1.Email = p2.Email and p1.id>p2.id
+//上升的温度
+select w2.id from Weather w1,Weather w2
+where dateDiff(w2.RecordDate,w1.RecordDate) = 1
+and w1.Temperature<w2.Temperature
+//大国家
+select name,population,area from World
+where area>3000000 or population>25000000
+//从不订购的客户
+select c.name Customers from Customers c
+where c.id not in(select Orders.CustomerId from Orders)
+//超过五名学生的课
+select c.class from courses c group by c.class
+having count(distinct c.student)>=5
+//有趣的电影
+select * from cinema
+where description!='boring' and id&1 order by rating desc
+//交换工资
+update salary set sex=if(sex='m','f','m')
+//重新格式化部门表
+SELECT
+    id,
+    max(if(month = 'Jan',revenue,null)) Jan_Revenue,
+    max(if(month = 'Feb',revenue,null)) Feb_Revenue,
+    max(if(month = 'Mar',revenue,null)) Mar_Revenue,
+    max(if(month = 'Apr',revenue,null)) Apr_Revenue,
+    max(if(month = 'May',revenue,null)) May_Revenue,
+    max(if(month = 'Jun',revenue,null)) Jun_Revenue,
+    max(if(month = 'Jul',revenue,null)) Jul_Revenue,
+    max(if(month = 'Aug',revenue,null)) Aug_Revenue,
+    max(if(month = 'Sep',revenue,null)) Sep_Revenue,
+    max(if(month = 'Oct',revenue,null)) Oct_Revenue,
+    max(if(month = 'Nov',revenue,null)) Nov_Revenue,
+    max(if(month = 'Dec',revenue,null)) Dec_Revenue
+FROM Department GROUP BY id
