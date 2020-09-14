@@ -3,6 +3,7 @@ package daria;
 import daria.model.Duck;
 import daria.model.DuckShop;
 import daria.model.Person;
+import daria.model.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -29,7 +30,7 @@ public class Main {
 //        //实例工厂方法
 //        Duck duck4 = (Duck) context.getBean("duck4");
 //        System.out.println(duck4);
-
+        Test test = new Test();
 
 
     }

@@ -34,8 +34,6 @@ https://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--<bean id="duck4" factory-bean="duckFactory" factory-method="create2"/>-->
 
 
-    <bean id="test" class="daria.model.Test"/>
-
-
+    <bean id="test" class="daria.model.Test" init-method="init"/>
 
 </beans>
